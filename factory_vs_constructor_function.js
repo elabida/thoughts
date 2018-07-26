@@ -7,14 +7,15 @@ function factoryF() {
   
   return {
     pi : 19,
-    fi : function() {console.log('creat_f: this.pi: ' + this.pi);},
-    fo : function() {console.log('creat_f: po: ' + po);} //closure!
+    fi : function() {console.log('fact_f: this.pi: ' + this.pi);},
+    fo : function() {console.log('fact_f: po: ' + po);} //closure!
   };
 }
 
 let fact_f = factoryF();
 fact_f.fi();
 fact_f.fo();
+
 
 function ConstructorF(){
   
